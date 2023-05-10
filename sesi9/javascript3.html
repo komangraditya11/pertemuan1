@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latian3</title>
+</head>
+<body>
+    <form action="GET">
+        <div>
+            <h1>nama lengkap</h1>
+                <input type="text" id="txnama" placeholder="nama lengkap">
+        </div>
+        <br>
+        <div>
+            <button type="button" onclick="checkname()">checkNama</button>
+        </div>
+    </form>
+   
+    <script>
+        function checkname(){
+            let nm= document.getElementById("txnama").value;
+            alert("isi dari field txnama"+nm);
+        }
+    </script>
+</body>
+</html>

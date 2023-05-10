@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>segitiga</title>
+</head>
+<body>
+    <form action="GET">
+        <div>
+            <h1>masukan alas segitiga</h1>
+                <input type="text" id="txalas" placeholder="masukan alas">
+        </div>
+        <br>
+        <div>
+            <h1>masukan tinggi segitiga</h1>
+                <input type="text" id="txtinggi" placeholder="masukan tinggi">
+        </div>
+        <br>
+        <div>
+            <button type="button" onclick="checkhasil()">checkhasil</button>
+        </div>
+    </form>
+   
+    <script>
+        function checkhasil(){
+                let a = document.getElementById("txalas").value
+                let t = document.getElementById("txtinggi").value
+                let hasil=a*t/2
+
+                alert ("luas segitiga adalah: "+hasil)
+        }
+    </script>
+</body>
+</html>
